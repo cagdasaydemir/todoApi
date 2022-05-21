@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using todoApi.Data;
 using todoApi.Entities;
@@ -10,18 +9,16 @@ namespace todoApi.Controllers
     [ApiController]
     public class TodoController : ControllerBase
     {
-
         private readonly TodoContext _todoContext;
-
         public TodoController(TodoContext todoContext)
         {
             _todoContext = todoContext;
         }
 
         [HttpGet]
-        public async Task<IActionResult> Get(int ?id)
+        public async Task<IActionResult> Get(int? id)
         {
-            if (id == null)
+            if (id != null)
             {
                 return Ok(await _todoContext.Todos.FindAsync(id));
             }
@@ -31,10 +28,6 @@ namespace todoApi.Controllers
             }
         }
 
-        private IActionResult Ok(object p)
-        {
-            throw new NotImplementedException();
-        }
 
         [HttpPost]
         public async Task<Todo> Post(Todo todo)
