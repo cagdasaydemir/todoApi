@@ -60,3 +60,4 @@ C:\Users\Cagdas Aydemir\Documents\GitHub\React-apps\todoApi\obj\Debug\net6.0\ref
 C:\Users\Cagdas Aydemir\Documents\GitHub\React-apps\todoApi\obj\Debug\net6.0\todoApi.pdb
 C:\Users\Cagdas Aydemir\Documents\GitHub\React-apps\todoApi\obj\Debug\net6.0\todoApi.genruntimeconfig.cache
 C:\Users\Cagdas Aydemir\Documents\GitHub\React-apps\todoApi\obj\Debug\net6.0\ref\todoApi.dll
+C:\Users\Cagdas Aydemir\Documents\GitHub\React-apps\todoApi\bin\Debug\net6.0\BCrypt.Net-Next.dll
